@@ -1,19 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Home from './components/home.vue'
+import Nav from './components/Nav.vue'
+
 </script>
 
 <template>
-  <Home>
-
-  </Home>
+  <Nav/>
+  <Home/>
   <div style="height: 200vh;"></div>
 </template>
 
 <script>
   export default {
     name: 'App',
-    components: {Home}
+    components: {Home, Nav}
   }
 </script>
 
@@ -31,7 +32,11 @@ import Home from './components/home.vue'
   
   #app {
     font-family: 'Caveat', sans-serif;
-    /* background-color: #eeb4c7; */
-
   }
+
+  :root {
+  --white: #ffffff;
+  --pink-ligth: #eeb4c7;
+  --pink-dark: #d74497;
+}
 </style>

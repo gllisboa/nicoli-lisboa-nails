@@ -23,23 +23,7 @@
 </template>
 
 <script>
-import { onMounted, defineComponent } from "vue";
-import { MqResponsive } from "vue3-mq";
-import { updateBreakpoints } from "vue3-mq";
 
-export default defineComponent({
-    name: 'App',
-    components: { MqResponsive },
-    setup() {
-        onMounted(() => {
-            updateBreakpoints({
-                preset: "devices"
-            })
-        })
-        return {
-        }
-    }
-})
 </script>
 
 <style lang="css" scoped>
@@ -53,7 +37,7 @@ export default defineComponent({
     } */
     #container-home {
         align-items: flex-start;
-        background-color: #eeb4c7;
+        background-color: var(--pink-ligth);
         border-top-left-radius: 3%;
         display: flex;
         height: 75vh;
@@ -88,7 +72,7 @@ export default defineComponent({
     }
 
     #title-container  * {
-        color: #ffffff;
+        color: var(--white);
     }
 
     #title {
@@ -111,7 +95,7 @@ export default defineComponent({
     }
 
     #link-agenda {
-        background-color: #d74497;
+        background-color: var(--pink-dark);
         outline: none;
         border-radius: 10%;
         border: solid;
@@ -122,8 +106,8 @@ export default defineComponent({
     }
 
     #link-agenda:hover {
-        background-color: #ffffff;
-        color: #d74497;
+        background-color: var(--pink-dark);
+        color: var(--pink-dark);
     }
 
     #image-container {
@@ -153,8 +137,8 @@ export default defineComponent({
     }
 
     #background-digonal:before {
-        border-right: 99vw solid #ffffff;
-        border-top: 20vh solid #eeb4c7;
+        border-right: 99vw solid var(--white);
+        border-top: 20vh solid var(--pink-ligth);
         border-bottom-style: unset;
         content: '';
         left: 1vw;

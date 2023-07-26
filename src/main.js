@@ -9,5 +9,5 @@ const app = createApp(App)
 // app.use(router)
 
 app
-  .use(VueResponsiveness, { mobile: 0, desktop: 1234 })
+  .use(VueResponsiveness, Presets.Bulma)
   .mount("#app");
