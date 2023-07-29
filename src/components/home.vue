@@ -12,7 +12,7 @@
                     Especializada em Alongamentos de Fibra de Vidro
                 </strong>
             </h1>
-            <a v-if="$matches.current !== 'mobile'" href="http://" id="link-agenda"> Agende um Horário</a>
+            <a v-if="$matches.current !== 'mobile'" id="link-agenda" :href="scheduleLink.href" > {{ scheduleLink.name  }}</a>
         </div>
         <div id="image-container" :class="$matches.current">
         </div>
@@ -23,23 +23,36 @@
 </template>
 
 <script>
+    import { defineComponent } from 'vue'
+    import navLinks from '../data/navLinks.json'
 
+    let listLinks = [...navLinks]
+    let scheduleLink = listLinks.filter(link => link.id == "schedule")[0]
+
+    export default defineComponent({
+            name: 'Home',
+            components: {},
+            data() {
+                return {
+                    listLinks: listLinks,
+                    scheduleLink: scheduleLink,
+                }
+            },
+            methods: {},
+            mounted() {
+            }
+
+    })
 </script>
 
 <style lang="css" scoped>
 
-    * {
-        /* color: antiquewhite; */
-    }
-    /* #before-all {
-        height: 5vh;
-        width: 100vw;
-    } */
     #container-home {
         align-items: flex-start;
         background-color: var(--pink-ligth);
         border-top-left-radius: 3%;
         display: flex;
+        font-size: 1.5rem;
         height: 75vh;
         justify-content: flex-start;
         margin-left: 1vw;
@@ -49,8 +62,8 @@
     }
 
     #container-home.mobile {
-        /* margin-top: 5vh; */
         align-items: center;
+        font-size: 1rem;
         flex-direction: column;
         justify-content: center;
     }
@@ -121,7 +134,7 @@
         position: absolute;
         right: 5vw;
         width: 25vw;
-        z-index: 999;   
+        z-index: 999;
     }
 
     #image-container.mobile {

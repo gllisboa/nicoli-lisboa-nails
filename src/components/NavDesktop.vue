@@ -1,24 +1,30 @@
 <template>
     <div id="container-nav" :class="{scrollAfterHome: scrollAfterHome}">
-        <nav id="nav" >
-            <a href=""> Sobre mim</a>
-            <a href=""> Serviços </a>
+        <nav id="nav">
+            <a v-for="link in firstLinks" :href="link.href" >{{ link.name }}</a>
             <div id="split-nav"></div>
-            <a href="" class="relevant"> Agende um Horario </a>
-            <a href="" class="relevant"> Contatos </a>
+            <a v-for="link in finalLinks" :href="link.href" :class="{relevant: link.relevant}" >{{ link.name }}</a>
         </nav>
     </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import navLinksList from '../data/navLinks.json'
+import ListUitls from '../utils/lists.js'
 
+let listLinks = [...navLinksList]
+let firstLinks = ListUitls.firstPartOfList(listLinks)
+let finalLinks = ListUitls.finalPartOfList(listLinks)
 export default defineComponent({
         name: 'Nav',
         components: {},
         data() {
             return {
-                scrollAfterHome: false
+                scrollAfterHome: false,
+                listLink: listLinks,
+                firstLinks: firstLinks,
+                finalLinks: finalLinks,
             }
         },
         methods: {
@@ -42,6 +48,7 @@ export default defineComponent({
 <style lang="css" scoped>
 
     #container-nav {
+        font-size: 1.5rem;
         color: var(--white);
         height: 10vh;
         position: fixed;
@@ -86,8 +93,11 @@ export default defineComponent({
         border: var(--white) solid;
         border-radius: 10%;
     }
-    #container-nav.scrollAfterHome :visited {
+    #container-nav.scrollAfterHome a:visited {
         color: var(--pink-ligth);
+    }
+    #container-nav.scrollAfterHome a.relevant:visited {
+        color: var(--white);
     }
 
     #split-nav {
