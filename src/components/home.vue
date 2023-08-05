@@ -63,6 +63,7 @@
         align-items: center;
         background-image: url('../assets/bg-home-mobile.png');
         background-position: center;
+        background-size: cover;
         font-size: 1rem;
         flex-direction: column;
         justify-content: center;
@@ -107,7 +108,7 @@
     }
     #sub-title.mobile {
         display: contents;
-        font-size: 1.15em;
+        font-size: 0.7em;
     }
 
     #link-agenda {
