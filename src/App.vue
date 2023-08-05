@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
-import Nav from './components/Nav.vue'
+import Nav from  './components/Nav.vue'
 
 </script>
 
