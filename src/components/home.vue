@@ -16,9 +16,6 @@
         </div>
         <div id="image-container" :class="$matches.current">
         </div>
-        <!-- <div id="background-digonal">
-
-        </div> -->
     </div>
 </template>
 
@@ -49,7 +46,7 @@
 
     #container-home {
         align-items: flex-start;
-        background-image: url(src/assets/bg-home.png);
+        background-image: url('../assets/bg-home.png');
         background-position: bottom;
         border-top-left-radius: 3%;
         display: flex;
@@ -64,7 +61,7 @@
 
     #container-home.mobile {
         align-items: center;
-        background-image: url(src/assets/bg-home-mobile.png);
+        background-image: url('../assets/bg-home-mobile.png');
         background-position: center;
         font-size: 1rem;
         flex-direction: column;
@@ -150,20 +147,5 @@
         position: unset;
         width: 100vw;
     }
-
-    #background-digonal {
-        height: 10vh;
-    }
-
-    #background-digonal:before {
-        border-right: 99vw solid var(--white);
-        border-top: 20vh solid var(--pink-ligth);
-        border-bottom-style: unset;
-        content: '';
-        left: 1vw;
-        bottom: 20vh;
-        position: absolute;
-        width: 0vw;
-}
 
 </style>
