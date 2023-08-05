@@ -98,13 +98,16 @@
         font-size: 4.5em;
     }
 
-    #sub-title {
+    #sub-title strong, #sub-title {
         display: contents;
-        font-size: 2em;
+        font-size: 0.9em;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
     }
     #sub-title.mobile {
         display: contents;
-        font-size: 2.3em;
+        font-size: 1.15em;
     }
 
     #link-agenda {

@@ -70,12 +70,17 @@ export default defineComponent({
         padding: 1vh;
         margin-right: 2vw;
         text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
     }
 
     #container-nav a.relevant {
         background-color: var(--pink-dark);
         border: var(--white) solid;
         border-radius: 10%;
+        font-family: 'Caveat', sans-serif;
+        box-shadow: var(--shadow-01);
     }
 
     #container-nav :visited {
@@ -86,6 +91,7 @@ export default defineComponent({
         background-color: var(--white);
         border: var(--pink-ligth) solid;
         border-radius: 10%;
+        box-shadow: var(--shadow-01);
     }
     #container-nav.scrollAfterHome a.relevant {
         color:  var(--white);

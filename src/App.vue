@@ -22,6 +22,8 @@ import Nav from './components/Nav.vue'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300;400;500&display=swap');
+
 
   html,
   body {
@@ -40,10 +42,7 @@ import Nav from './components/Nav.vue'
   --white: #ffffff;
   --pink-ligth: #eeb4c7;
   --pink-dark: #d74497;
-  --pink-dark-opacity-4: rgb(215, 68, 151, 0.4);
-  --pink-dark-opacity-3: rgb(215, 68, 151, 0.3);
-  --pink-dark-opacity-2: rgb(215, 68, 151, 0.2);
-  --pink-dark-opacity-1: rgb(215, 68, 151, 0.1);
-  --pink-dark-opacity-05: rgb(215, 68, 151, 0.05);
+  --shadow-01: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-02: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 </style>
