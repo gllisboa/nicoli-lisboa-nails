@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Home from './components/home.vue'
-import About from './components/about.vue'
+import About from './components/About.vue'
 import Nav from  './components/nav.vue'
 
 </script>
