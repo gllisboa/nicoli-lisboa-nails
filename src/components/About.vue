@@ -40,17 +40,20 @@
 
     #container-about {
         align-items: center;
+        align-items: flex-start;
+        background-color: var(--white);
         display: flex;
+        height: 100vh;
         justify-content: center;
         margin-left: 1vw;
-        height: 100vh;
+        margin-top: 10vh;
         width: 100vw;
-        background-color: var(--white);
     }
 
     #container-about.mobile {
        flex-direction: column;
-       /* margin-top: 5vh; */
+       align-items: center;
+       margin-top: 0vh;
     }
 
     #container-image-me {

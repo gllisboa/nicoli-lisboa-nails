@@ -16,9 +16,9 @@
         </div>
         <div id="image-container" :class="$matches.current">
         </div>
-        <div id="background-digonal">
+        <!-- <div id="background-digonal">
 
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -49,7 +49,8 @@
 
     #container-home {
         align-items: flex-start;
-        background-color: var(--pink-ligth);
+        background-image: url(src/assets/bg-home.png);
+        background-position: bottom;
         border-top-left-radius: 3%;
         display: flex;
         font-size: 1.5rem;
@@ -63,6 +64,8 @@
 
     #container-home.mobile {
         align-items: center;
+        background-image: url(src/assets/bg-home-mobile.png);
+        background-position: center;
         font-size: 1rem;
         flex-direction: column;
         justify-content: center;
