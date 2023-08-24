@@ -108,7 +108,6 @@
     }
     #sub-title.mobile {
         display: contents;
-        font-size: 0.7em;
     }
 
     #link-agenda {
