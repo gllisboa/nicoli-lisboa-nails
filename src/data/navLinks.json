@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Sobre min",
+        "href": "/#container-about"
+    },
+    {
+        "name": "Serviços",
+        "href": "/two"
+    },
+    {
+        "name": "Contatos",
+        "href": "/",
+        "relevant": true
+    },
+    {
+        "id": "schedule",
+        "name": "Agende um Horário",
+        "href": "https://wa.link/tz14yq",
+        "relevant": true
+    }
+]

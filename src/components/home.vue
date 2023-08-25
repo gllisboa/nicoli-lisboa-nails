@@ -12,50 +12,45 @@
                     Especializada em Alongamentos de Fibra de Vidro
                 </strong>
             </h1>
-            <a v-if="$matches.current !== 'mobile'" href="http://" id="link-agenda"> Agende um Horário</a>
+            <a v-if="$matches.current !== 'mobile'" id="link-agenda" :href="scheduleLink.href" > {{ scheduleLink.name  }}</a>
         </div>
         <div id="image-container" :class="$matches.current">
-        </div>
-        <div id="background-digonal">
-
         </div>
     </div>
 </template>
 
 <script>
-import { onMounted, defineComponent } from "vue";
-import { MqResponsive } from "vue3-mq";
-import { updateBreakpoints } from "vue3-mq";
+    import { defineComponent } from 'vue'
+    import navLinks from '../data/navLinks.json'
 
-export default defineComponent({
-    name: 'App',
-    components: { MqResponsive },
-    setup() {
-        onMounted(() => {
-            updateBreakpoints({
-                preset: "devices"
-            })
-        })
-        return {
-        }
-    }
-})
+    let listLinks = [...navLinks]
+    let scheduleLink = listLinks.filter(link => link.id == "schedule")[0]
+
+    export default defineComponent({
+            name: 'Home',
+            components: {},
+            data() {
+                return {
+                    listLinks: listLinks,
+                    scheduleLink: scheduleLink,
+                }
+            },
+            methods: {},
+            mounted() {
+            }
+
+    })
 </script>
 
 <style lang="css" scoped>
 
-    * {
-        /* color: antiquewhite; */
-    }
-    /* #before-all {
-        height: 5vh;
-        width: 100vw;
-    } */
     #container-home {
         align-items: flex-start;
-        background-color: #eeb4c7;
+        background-image: url('../assets/bg-home.png');
+        background-position: bottom;
         border-top-left-radius: 3%;
         display: flex;
+        font-size: 1.5rem;
         height: 75vh;
         justify-content: flex-start;
         margin-left: 1vw;
@@ -65,8 +60,11 @@ export default defineComponent({
     }
 
     #container-home.mobile {
-        /* margin-top: 5vh; */
         align-items: center;
+        background-image: url('../assets/bg-home-mobile.png');
+        background-position: center;
+        background-size: cover;
+        font-size: 1rem;
         flex-direction: column;
         justify-content: center;
     }
@@ -88,7 +86,7 @@ export default defineComponent({
     }
 
     #title-container  * {
-        color: #ffffff;
+        color: var(--white);
     }
 
     #title {
@@ -101,17 +99,19 @@ export default defineComponent({
         font-size: 4.5em;
     }
 
-    #sub-title {
+    #sub-title strong, #sub-title {
         display: contents;
-        font-size: 2em;
+        font-size: 0.9em;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
     }
     #sub-title.mobile {
         display: contents;
-        font-size: 2.3em;
     }
 
     #link-agenda {
-        background-color: #d74497;
+        background-color: var(--pink-dark);
         outline: none;
         border-radius: 10%;
         border: solid;
@@ -122,8 +122,8 @@ export default defineComponent({
     }
 
     #link-agenda:hover {
-        background-color: #ffffff;
-        color: #d74497;
+        background-color: var(--pink-dark);
+        color: var(--pink-dark);
     }
 
     #image-container {
@@ -137,7 +137,7 @@ export default defineComponent({
         position: absolute;
         right: 5vw;
         width: 25vw;
-        z-index: 999;   
+        z-index: 999;
     }
 
     #image-container.mobile {
@@ -147,20 +147,5 @@ export default defineComponent({
         position: unset;
         width: 100vw;
     }
-
-    #background-digonal {
-        height: 10vh;
-    }
-
-    #background-digonal:before {
-        border-right: 99vw solid #ffffff;
-        border-top: 20vh solid #eeb4c7;
-        border-bottom-style: unset;
-        content: '';
-        left: 1vw;
-        bottom: 20vh;
-        position: absolute;
-        width: 0vw;
-}
 
 </style>
