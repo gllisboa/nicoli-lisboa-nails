@@ -7,7 +7,6 @@ const app = createApp(App)
 
 
 // app.use(router)
-
 app
   .use(VueResponsiveness, Presets.Bulma)
   .mount("#app");

@@ -13,10 +13,13 @@ import Nav from  './components/Nav.vue'
 </template>
 
 <script>
-  export default {
+
+  import { defineComponent } from 'vue'
+  export default  defineComponent ({
     name: 'App',
-    components: {Home, Nav, About}
-  }
+    components: {Home, Nav, About},
+  })
+
 </script>
 
 <style>
