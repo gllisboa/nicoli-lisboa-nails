@@ -12,7 +12,7 @@
                 Sobre mim
             </strong>
             <strong id="text-about">
-                Prazer, me chamo Nicoli Lisboa, sou brasileira, moradora de Ovar, Nail Designer com foco em Fibra de Vidro, Gelinho, Banho de Gel e aquela cutilagem caprichada que amamos, né?
+Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma apaixonada Lash Designer, trazendo o melhor em cuidados estéticos diretamente para Ovar!
             </strong>
         </div>
 
