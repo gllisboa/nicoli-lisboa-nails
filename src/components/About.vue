@@ -12,8 +12,12 @@
                 Sobre mim
             </strong>
             <strong id="text-about">
-Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma apaixonada Lash Designer, trazendo o melhor em cuidados estéticos diretamente para Ovar!
+Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma apaixonada Lash Designer, trazendo o melhor em cuidados estéticos diretamente para Ovar! <br><br>
+💅✨ Com habilidade artística e dedicação, transformo unhas em verdadeiras obras de arte com a técnica de fibra de vidro. Meu compromisso é proporcionar a você não apenas unhas incríveis, mas também uma experiência relaxante e única. <br><br>
+👁️🌈 Como especialista em Lash Designer, crio olhares deslumbrantes e naturais que refletem sua beleza interior. Cada procedimento é feito com precisão e paixão para realçar a sua expressão única. <br><br>
+📍 Estou localizada em Ovar, pronta para recebê-lo(a) em um ambiente acolhedor e profissional.
             </strong>
+
         </div>
 
     </div>
@@ -53,7 +57,9 @@ Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma
     #container-about.mobile {
        flex-direction: column;
        align-items: center;
-       margin-top: 0vh;
+       height: 200vh;
+       margin-top: 6vh;
+       justify-content: flex-start;
     }
 
     #container-image-me {
@@ -64,7 +70,7 @@ Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma
     }
 
     #container-image-me.mobile {
-        height: 30%;
+        height: 16%;
         width: 60%;
         margin-bottom: 3vh;
     }
