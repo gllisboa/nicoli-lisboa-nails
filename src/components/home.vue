@@ -4,12 +4,12 @@
             <div></div>
             <h1 id="title" :class="$matches.current">
                 <strong>
-                    Nails Designer
+                    Especialista em Unhas e Pestanas
                 </strong>
             </h1>
             <h1 id="sub-title" :class="$matches.current">
                 <strong>
-                    Especializada em Alongamentos de Fibra de Vidro
+                    🌟 Bem-vindo(a) ao Mundo da Beleza por Nicoli Lisboa! 🌟
                 </strong>
             </h1>
             <a v-if="$matches.current !== 'mobile'" id="link-agenda" :href="scheduleLink.href" > {{ scheduleLink.name  }}</a>
@@ -96,7 +96,7 @@
     }
 
     #title.mobile {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     #sub-title strong, #sub-title {
@@ -108,6 +108,7 @@
     }
     #sub-title.mobile {
         display: contents;
+        font-size: 1.3em;
     }
 
     #link-agenda {
@@ -130,8 +131,8 @@
         background-image: url('../assets/1.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 120%;
-        bottom: 20%;
+        background-size: 179%;
+        bottom: 28%;
         height: 25vw;
         margin-top: 3vh;
         position: absolute;
@@ -141,7 +142,8 @@
     }
 
     #image-container.mobile {
-        background-size: 63%;
+        background-size: 127%;
+        background-position-y: -17vh;
         display: block;
         height: inherit;
         position: unset;
