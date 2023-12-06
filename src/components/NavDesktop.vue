@@ -68,11 +68,12 @@ export default defineComponent({
         border-radius: 10%;
         color: inherit;
         padding: 1vh;
-        margin-right: 2vw;
+        margin-right: 1vw;
+        text-align: center;
         text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
         font-family: 'Roboto Slab', serif;
         font-weight: 300;
+        width: 12.5vw;
     }
 
     #container-nav a.relevant {
@@ -108,7 +109,7 @@ export default defineComponent({
 
     #split-nav {
         display: inline;
-        width: 58vw;
+        width: 36vw;
     }
 
 </style>

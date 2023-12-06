@@ -92,7 +92,7 @@ Olá, sou Nicoli Lisboa, sua Nail Designer especializada em fibra de vidro e uma
         display: flex;
         flex-direction: column;
         text-align: justify;
-        font-size: 2.5rem;
+        font-size: 100vh.5rem;
         width: 35%;
     }
 
